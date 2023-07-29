@@ -1,0 +1,115 @@
+.coinsDetails {
+    min-height: calc(100vh - 5rem);
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+
+    .coinInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .date {
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 20px 0;
+        }
+
+        .coinDetail {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            >div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >.badge {
+                    margin-right: 5px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+
+                    &.increase {
+                        background-color: rgb(32, 212, 32);
+                    }
+
+                    &.decrease {
+                        background-color: red;
+                    }
+                }
+            }
+        }
+
+        .coinValuse {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .ranke {
+                padding: 4px;
+                background-color: rgb(33, 27, 27);
+                color: white;
+            }
+
+            >input {
+                width: 100%;
+            }
+
+            .rangeValue {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 14px;
+
+                .low {
+                    background-color: #e9b0b0;
+                    color: #922525;
+                    padding: 4px;
+                }
+
+                .center {
+                    padding: 4px;
+                }
+
+                .high {
+                    background-color: rgb(154, 203, 154);
+                    color: darkgreen;
+                    padding: 4px;
+                }
+
+                margin-bottom: 30px;
+            }
+
+            .item {
+                width: 100%;
+                padding: 1rem;
+                margin: 5px 0;
+                background-color: rgb(230, 224, 224);
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-family: 'Bebas Neue', sans-serif;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
